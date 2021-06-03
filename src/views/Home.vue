@@ -17,8 +17,8 @@
 
     <div v-for="movie in movies" v-bind:key="movie.id">
       <h3>Title: {{ movie.title }}</h3>
-      <button v-on:click="showMovie(movie)">More Info</button>
       <p>Plot: {{ movie.plot }}</p>
+      <button v-on:click="showMovie(movie)">More Info</button>
     </div>
     <dialog id="movie-details">
       <form method="dialog">
