@@ -11,9 +11,9 @@
         <router-link to="/logout">Logout</router-link>
       </span>
       <span v-else>
-        <router-link to="/signup">Signup</router-link>
-        |
         <router-link to="/login">Login</router-link>
+        |
+        <router-link to="/signup">Signup</router-link>
       </span>
     </div>
     <router-view />
@@ -21,8 +21,12 @@
 </template>
 
 <style>
+body {
+  background-color: #f8f8f8;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

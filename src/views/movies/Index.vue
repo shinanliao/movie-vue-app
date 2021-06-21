@@ -2,8 +2,8 @@
   <div class="movies-index">
     <input type="text" v-model="titleFilter" placeholder="Search" />
     <div v-for="movie in filterBy(movies, titleFilter, 'title')" v-bind:key="movie.id">
-      <h3>Title: {{ movie.title }}</h3>
-      <p>Plot: {{ movie.plot }}</p>
+      <h3 style="color: black">Title: {{ movie.title }}</h3>
+      <p style="color: gray">Plot: {{ movie.plot }}</p>
       <p>Year: {{ movie.year }}</p>
       <router-link :to="`/movies/${movie.id}`">More Information</router-link>
       <br />

@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
+    <h1 style="font-family: georgia">{{ message }}</h1>
+    <img src="/../../cinema.jpg" alt="Cinema" style="border: 4px solid black" />
   </div>
 </template>
 
@@ -11,7 +12,7 @@
 export default {
   data: function () {
     return {
-      message: "Shinan's Favorite Movies",
+      message: "My Favorite Movies",
     };
   },
   created: function () {},
