@@ -6,7 +6,7 @@
     <p>{{ movie.genre }}</p>
     <router-link :to="`/movies/${movie.id}/edit`">Edit</router-link>
     <br />
-    <button v-on:click="destroyMovie()">Delete Movie</button>
+    <button class="btn btn-warning" v-on:click="destroyMovie()">Delete</button>
   </div>
 </template>
 

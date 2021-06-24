@@ -25,7 +25,7 @@
         <label>Genre:</label>
         <input type="text" class="form-control" v-model="newMovieParams.genre" />
       </div>
-      <input type="submit" class="btn btn-primary" value="Submit" />
+      <input type="submit" class="btn btn-success" value="Submit" />
     </form>
     newMovieParams: {{ newMovieParams }}
   </div>

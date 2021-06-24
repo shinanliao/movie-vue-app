@@ -1,12 +1,20 @@
 <template>
   <div class="movies-index">
-    <input type="text" v-model="titleFilter" placeholder="Search" />
-    <div v-for="movie in filterBy(movies, titleFilter, 'title')" v-bind:key="movie.id">
-      <h3 style="color: black">Title: {{ movie.title }}</h3>
-      <p style="color: gray">Plot: {{ movie.plot }}</p>
-      <p>Year: {{ movie.year }}</p>
-      <router-link :to="`/movies/${movie.id}`">More Information</router-link>
-      <br />
+    <h1>My Movies</h1>
+    <br />
+    Search:
+    <input placeholder="Search by Title" v-model="titleFilter" />
+    <div class="row">
+      <div class="col-sm-4" v-for="movie in filterBy(movies, titleFilter, 'title')" v-bind:key="movie.id">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ movie.title }}</h5>
+            <p class="card-text">{{ movie.year }}</p>
+            <p>{{ movie.plot }}</p>
+            <router-link class="btn btn-info" :to="`/movies/${movie.id}`">Movie Details</router-link>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

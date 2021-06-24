@@ -15,15 +15,15 @@
         <label>Plot:</label>
         <input type="text" class="form-control" v-model="editMovieParams.plot" />
       </div>
-        <div class="form-group">
+      <div class="form-group">
         <label>Year:</label>
         <input type="text" class="form-control" v-model="editMovieParams.year" />
       </div>
-        <div class="form-group">
+      <div class="form-group">
         <label>Genre:</label>
         <input type="text" class="form-control" v-model="editMovieParams.genre" />
       </div>
-      <input type="submit" class="btn btn-primary" value="Submit" />
+      <input type="submit" class="btn btn-success" value="Submit" />
     </form>
     editMovieParams: {{ editMovieParams }}
   </div>
